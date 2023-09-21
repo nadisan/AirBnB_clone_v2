@@ -27,7 +27,11 @@ class test_fileStorage(unittest.TestCase):
     def test_obj_list_empty(self):
         """ __objects is initially empty """
         self.assertEqual(len(storage.all()), 0)
-
+    
+    def test_init(self);
+        """ Test initialization"""
+        self.assertTrue(isinstance(self.storage, FileStorage))
+    
     def test_new(self):
         """ New object is correctly added to __objects """
         new = BaseModel()
