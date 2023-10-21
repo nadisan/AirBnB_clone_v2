@@ -3,11 +3,10 @@
 starts a Flask web application
 """
 from flask import Flask, request
-
-
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route('/', strict_slashes=False)
 def hello():
     """display Hello HBNB!"""
     return 'Hello HBNB!'
