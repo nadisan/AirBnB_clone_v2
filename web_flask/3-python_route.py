@@ -23,7 +23,7 @@ def cisfun(text):
     """display C + input text"""
     return 'C ' + text.replace('_', ' ')
 
-
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python(text='is cool'):
     """display python + input text"""
