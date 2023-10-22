@@ -49,7 +49,7 @@ def numbersandtemplates(n):
     if n % 2 == 0:
         iseven = 'even'
     else:
-        iseven = 'old'
+        iseven = 'odd'
     return render_template('6-number_odd_or_even.html', n=n, iseven=iseven)
 
 
